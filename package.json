@@ -1,0 +1,19 @@
+{
+  "name": "yukicoder-selector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/request": "^2.48.5",
+    "@types/request-promise": "^4.1.47",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}

@@ -5,7 +5,8 @@ const ApiUrl = 'https://yukicoder.me/api/v1';
 const userId = parseInt(process.argv[2]);
 
 interface Problem {
-    ProblemId: number
+    No: number
+    Title: string
 }
 
 async function select() {
@@ -15,7 +16,10 @@ async function select() {
     const selectedIndex = Math.floor(Math.random() * problems.length);
     const selectedProblem = problems[selectedIndex];
 
-    exec(`open https://yukicoder.me/problems/no/${selectedProblem.No}`);
+    // exec(`open https://yukicoder.me/problems/no/${selectedProblem.No}`);
+
+    console.log(`No. ${selectedProblem.No} : ${selectedProblem.Title}`);
+    console.log(`https://yukicoder.me/problems/no/${selectedProblem.No}`);
 }
 
 select();
